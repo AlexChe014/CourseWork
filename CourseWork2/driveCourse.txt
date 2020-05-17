@@ -1,0 +1,102 @@
+create table objects
+(id_o serial Primary key,
+type_o char(1) CHECK(type_o IN ('a', 'u')));
+
+create table auto 
+(id_a int Primary key,
+model text not null,
+num text not null,
+year_a int CHECK(year_a>1900 and year_a<2100));
+
+create table users
+(id_u int Primary key,
+surname text not null,
+name text not null,
+patron text,
+birthday date,
+login text unique not null,
+pass text unique not null,
+role char(1) CHECK (role IN ('d', 'a', 't', 's')));
+
+create table s_group
+(id_g serial Primary key,
+create_d date,
+teach_id int not null);
+
+create table list
+(id_g int,
+id_s int,
+Primary key(id_g, id_s));
+
+create table payment
+(id_p serial Primary key,
+id_s int,
+summa real not null check(summa > 0),
+pay_day date not null)
+
+ALTER TABLE auto ADD FOREIGN KEY (id_a) REFERENCES objects(id_o);
+ALTER TABLE users ADD FOREIGN KEY (id_u) REFERENCES objects(id_o);
+ALTER TABLE s_group ADD FOREIGN KEY (teach_id) REFERENCES users(id_u);
+ALTER TABLE list ADD FOREIGN KEY (id_g) REFERENCES s_group(id_g);
+ALTER TABLE list ADD FOREIGN KEY (id_s) REFERENCES users(id_u);
+ALTER TABLE payment ADD FOREIGN KEY (id_s) REFERENCES users(id_u);
+
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('a');
+insert into objects (type_o) values ('a');
+insert into objects (type_o) values ('a');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+insert into objects (type_o) values ('u');
+
+insert into users values (1, 'Червоненко', 'Александр', 'Михайлович', '1997-04-01', 'director', 'password', 'd');
+insert into users values (2, 'Быков', 'Максим', 'Владимирович', '1999-05-07', 'admin', 'looser', 'a');
+insert into users values (3, 'Амирьянова', 'Ангелина', 'Ахметбековна', '1999-10-14', 'angelook', 'teach1', 't');
+insert into users values (4, 'Дроздова', 'Анастасия', 'Павловна', '1999-02-21', 'drozd27', 'teach2', 't');
+insert into users values (5, 'Суворов', 'Никита', 'Константинович', '1999-11-14', 'n.suvorov', 'teach3', 't');
+insert into users values (9, 'Валеев', 'Дмитрий', 'Анатольевич', '2017-07-21', 'valeev', 'stud1', 's');
+insert into users values (10, 'Смирнов', 'Максим', 'Леонидович', '1999-11-08', 'smirnov', 'stud2', 's');
+insert into users values (11, 'Хуснутдинов', 'Азат', 'Гафурович', '1999-01-17', 'khusnutdinov', 'stud3', 's');
+insert into users values (12, 'Абдуллин', 'Айнур', 'Айратович', '1994-11-15', 'abdullin', 'stud4', 's');
+insert into users values (13, 'Басюк', 'Никита', 'Ильич', '1996-03-12', 'basuk', 'stud5', 's');
+insert into users values (14, 'Губайдуллин', 'Ранис', 'Булатович', '1999-12-27', 'ranis', 'stud6', 's');
+insert into users values (15, 'Ибрагимов', 'Ринальд', 'Раильевич', '2000-09-24', 'ibragimov', 'stud7', 's');
+insert into users values (16, 'Иванов', 'Глеб', 'Андреевич', '1999-08-05', 'ivanov', 'stud8', 's');
+insert into users values (17, 'Суханов', 'Егор', 'Юрьевич', '1997-07-22', 'sukhanov', 'stud9', 's');
+insert into users values (18, 'Хлебников', 'Кирилл', 'Владимирович', '2000-04-12', 'hlebnikov', 'restinpeace', 's');
+insert into users(id_u, surname, name, patron, login, pass, role) values (19, 'Астафьев', 'Руслан', 'Дмитриевич', 'astafiev', 'stud11', 's');
+insert into users values (20, 'Гильмутдинов', 'Руслан', 'Фаридович', '1984-12-12', 'gitelman', 'thebest', 's');
+
+insert into auto values (6, 'BMW X5', 'А001АА', 2005);
+insert into auto values (7, 'Audi A8', 'В002ВВ', 2019);
+insert into auto values (8, 'Maybach 62', 'С003СС', 2010);
+
+insert into s_group (create_d, teach_id) values ('2019-10-14', 3);
+insert into s_group (create_d, teach_id) values ('2020-02-21', 4);
+insert into s_group (create_d, teach_id) values ('2019-11-14', 5);
+
+insert into list values (1, 9);
+insert into list values (2, 10);
+insert into list values (3, 11);
+insert into list values (1, 12);
+insert into list values (2, 13);
+insert into list values (3, 14);
+insert into list values (1, 15);
+insert into list values (2, 16);
+insert into list values (3, 17);
+insert into list values (1, 18);
+insert into list values (2, 19);
+insert into list values (3, 20);

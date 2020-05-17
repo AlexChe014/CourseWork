@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище driveCourseModelContainer" CdmEntityContainer="driveCourseEntities1">
+    <EntitySetMapping Name="auto">
+      <EntityTypeMapping TypeName="driveCourseModel.auto">
+        <MappingFragment StoreEntitySet="auto">
+          <ScalarProperty Name="id_a" ColumnName="id_a" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="num" ColumnName="num" />
+          <ScalarProperty Name="year_a" ColumnName="year_a" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="objects">
+      <EntityTypeMapping TypeName="driveCourseModel.objects">
+        <MappingFragment StoreEntitySet="objects">
+          <ScalarProperty Name="id_o" ColumnName="id_o" />
+          <ScalarProperty Name="type_o" ColumnName="type_o" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="payment">
+      <EntityTypeMapping TypeName="driveCourseModel.payment">
+        <MappingFragment StoreEntitySet="payment">
+          <ScalarProperty Name="id_p" ColumnName="id_p" />
+          <ScalarProperty Name="id_s" ColumnName="id_s" />
+          <ScalarProperty Name="summa" ColumnName="summa" />
+          <ScalarProperty Name="pay_day" ColumnName="pay_day" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="s_group">
+      <EntityTypeMapping TypeName="driveCourseModel.s_group">
+        <MappingFragment StoreEntitySet="s_group">
+          <ScalarProperty Name="id_g" ColumnName="id_g" />
+          <ScalarProperty Name="create_d" ColumnName="create_d" />
+          <ScalarProperty Name="teach_id" ColumnName="teach_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="driveCourseModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="id_u" ColumnName="id_u" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="patron" ColumnName="patron" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="role" ColumnName="role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="list" TypeName="driveCourseModel.list" StoreEntitySet="list">
+      <EndProperty Name="s_group">
+        <ScalarProperty Name="id_g" ColumnName="id_g" />
+      </EndProperty>
+      <EndProperty Name="users">
+        <ScalarProperty Name="id_u" ColumnName="id_s" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,118 @@
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\CourseWork2.exe.config
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\CourseWork2.exe
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\CourseWork2.pdb
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.csprojAssemblyReference.cache
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.Properties.Resources.resources
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.csproj.GenerateResource.cache
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.csproj.CoreCompileInputs.cache
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.exe
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.pdb
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.EnterForm.resources
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.Main.resources
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\EntityFramework.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\Npgsql.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Buffers.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Memory.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Text.Json.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.ValueTuple.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\EntityFramework.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\Npgsql.pdb
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\Npgsql.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Buffers.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Memory.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Text.Json.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\System.ValueTuple.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.csproj.CopyComplete
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.AddTeacher.resources
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.EditTeacher.resources
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.AddStudent.resources
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.EditStudent.resources
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.AddAuto.resources
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.EditAuto.resources
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.AddPayment.resources
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.EditPayment.resources
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\NPOI.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\NPOI.OOXML.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.Schedule.resources
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\EntityFramework6.Npgsql.dll
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\bin\Debug\EntityFramework6.Npgsql.xml
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.csproj.ResolveComReference.cache
+C:\Users\alexc\source\repos\CourseWork2\CourseWork2\obj\Debug\CourseWork2.SheduleDate.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\CourseWork2.exe.config
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\CourseWork2.exe
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\CourseWork2.pdb
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\EntityFramework.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\EntityFramework6.Npgsql.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\Npgsql.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\NPOI.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\NPOI.OOXML.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Buffers.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Memory.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Text.Json.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.ValueTuple.dll
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\EntityFramework.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\EntityFramework6.Npgsql.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\Npgsql.pdb
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\Npgsql.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Buffers.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Memory.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Text.Json.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\bin\Debug\System.ValueTuple.xml
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.csprojAssemblyReference.cache
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.csproj.ResolveComReference.cache
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.AddAuto.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.AddPayment.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.AddStudent.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.EditAuto.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.EditPayment.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.EditStudent.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.EditTeacher.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.Main.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.AddTeacher.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.EnterForm.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.Properties.Resources.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.Schedule.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.SheduleDate.resources
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.csproj.GenerateResource.cache
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.csproj.CoreCompileInputs.cache
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.csproj.CopyComplete
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.exe
+C:\Users\alexc\OneDrive\Рабочий стол\Пары\a.chervonenko22\CourseWork2\CourseWork2\obj\Debug\CourseWork2.pdb

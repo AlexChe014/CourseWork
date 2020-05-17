@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4f77fac6176d40b592d4f86912b73171" Name="Diagram1">
+        <EntityTypeShape EntityType="driveCourseModel.auto" Width="1.5" PointX="0.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="driveCourseModel.objects" Width="1.5" PointX="3.625" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="driveCourseModel.payment" Width="1.5" PointX="8.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="driveCourseModel.s_group" Width="1.5" PointX="8.875" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="driveCourseModel.users" Width="1.5" PointX="6" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="driveCourseModel.auto_id_a_fkey" ManuallyRouted="false" />
+        <AssociationConnector Association="driveCourseModel.users_id_u_fkey" ManuallyRouted="false" />
+        <AssociationConnector Association="driveCourseModel.payment_id_s_fkey" ManuallyRouted="false" />
+        <AssociationConnector Association="driveCourseModel.s_group_teach_id_fkey" ManuallyRouted="false" />
+        <AssociationConnector Association="driveCourseModel.list" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
