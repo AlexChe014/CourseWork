@@ -58,7 +58,7 @@
             0,
             0});
             this.numericUpDown1.Minimum = new decimal(new int[] {
-            1980,
+            1885,
             0,
             0,
             0});
@@ -76,9 +76,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(149, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 24);
+            this.label5.Size = new System.Drawing.Size(90, 24);
             this.label5.TabIndex = 55;
-            this.label5.Text = "Добавить:";
+            this.label5.Text = "Изменить:";
             // 
             // button2
             // 

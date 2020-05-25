@@ -32,7 +32,8 @@ namespace CourseWork2
                     string patron = (!String.IsNullOrEmpty(textBox3.Text) ? Program.NameString(textBox3.Text) : "");
                     StudentForm stud = new StudentForm(Program.NameString(textBox1.Text), Program.NameString(textBox2.Text),
                         patron, Program.NameString(textBox5.Text), Program.NameString(textBox6.Text));
-                    stud.AddStudent((int)numericUpDown3.Value, (int)numericUpDown2.Value, (int)numericUpDown1.Value);
+                    stud.AddStudent(dateTimePicker1);
+                    ((Main)Owner).ученикиToolStripMenuItem_Click(sender, e);
                     this.Close();
                 }               
                 catch (Exception ex) { MessageBox.Show(ex.Message); }

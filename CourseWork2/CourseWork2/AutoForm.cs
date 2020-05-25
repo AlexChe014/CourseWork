@@ -46,9 +46,22 @@ namespace CourseWork2
 
 
         }
-        public void EditAuto(auto item2, auto result)
+        public void EditAuto(auto item,string mod, string numb, int y, auto result)
         {
-
+            if (item.num != numb)
+            {
+                var nums = (from a in db.auto
+                            select a.num).ToList();
+                foreach (string num in nums)
+                {
+                    if (num == numb.ToUpper()) throw new Exception("Данный автомобиль уже зарегестрирован в базе");
+                }
+            }
+            result = db.auto.SingleOrDefault(n => n.id_a == item.id_a);
+            result.model = mod;
+            result.num = numb;
+            result.year_a = y;
+            db.SaveChanges();
         }
     }
 }

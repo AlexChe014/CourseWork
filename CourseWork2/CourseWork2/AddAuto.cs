@@ -31,9 +31,10 @@ namespace CourseWork2
                 {
                     AutoForm auto = new AutoForm(maskedTextBox1.Text, textBox1.Text, (int)numericUpDown1.Value);
                     auto.AddAuto();
+                    ((Main)Owner).автоToolStripMenuItem_Click(sender, e);
                     this.Close();
                 }
-                catch (Exception ex) { MessageBox.Show(ex.Message); }
+                catch (Exception ex) { MessageBox.Show(ex.Message, "Ошибка"); }
             }
             else MessageBox.Show("Не все поля заполнены!");
         }

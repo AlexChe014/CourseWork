@@ -19,11 +19,12 @@ namespace CourseWork2
             
             var group = (from g in db.s_group
                          join u in db.users on g.teach_id equals u.id_u
+                         orderby u.id_u
                          select new { g.id_g, g.teach_id, u.surname }).Distinct();
 
             foreach (var sur in group)
                 comboBox1.Items.Add(sur.surname);
-            RadioButton[] radio = new RadioButton[] { radioButton1, radioButton2, radioButton3, radioButton4, radioButton5, radioButton6 };
+            comboBox1.SelectedIndex = 0;           
             
         }
 

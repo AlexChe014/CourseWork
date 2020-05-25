@@ -32,7 +32,8 @@ namespace CourseWork2
                     string patron = (!String.IsNullOrEmpty(textBox3.Text) ? Program.NameString(textBox3.Text) : "");
                     TeacherForm teach = new TeacherForm(Program.NameString(textBox1.Text), Program.NameString(textBox2.Text),
                     patron, Program.NameString(textBox5.Text), Program.NameString(textBox6.Text));
-                    teach.AddTeacher((int)numericUpDown3.Value, (int)numericUpDown2.Value, (int)numericUpDown1.Value, checkBox1);
+                    teach.AddTeacher(dateTimePicker1, checkBox1);
+                    ((Main)Owner).преподавателиToolStripMenuItem_Click(sender, e);
                     this.Close();
                 }
                 catch (Exception ex) { MessageBox.Show(ex.Message); }

@@ -35,9 +35,17 @@ namespace CourseWork2
         {
             if (Program.CheckString(new string[] { textBox1.Text }) && comboBox1.SelectedIndex != 0)
             {
-                PayForm pay = new PayForm((float)Convert.ToDouble(textBox1.Text));
-                pay.AddPayment((int)numericUpDown3.Value, (int)numericUpDown2.Value, (int)numericUpDown1.Value, comboBox1);
-                this.Close();
+                try
+                {
+                    PayForm pay = new PayForm((float)Convert.ToDouble(textBox1.Text));
+                    pay.AddPayment(dateTimePicker1, comboBox1);
+                    ((Main)Owner).платежиStripMenuItem_Click(sender, e);
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Ошибка");
+                }
             }
             else MessageBox.Show("Не все поля заполнены!");
         }

@@ -24,34 +24,52 @@ namespace CourseWork2
             this.login = login;
             this.password = password;
         }
-        public void AddStudent(int year, int month, int day)
-        {          
-                var logs = (from l in db.users
-                            select l.login).ToList();
+        public StudentForm()
+        { }
+        public void AddStudent(DateTimePicker dateTimePicker)
+        {
+            var logs = (from l in db.users
+                        select l.login).ToList();
 
-                foreach (string log in logs)
-                { if (log == login) throw new Exception("Данный логин уже занят"); }
-                int new_id = db.objects.Max(n => n.id_o) + 1;
-                DateTime date = new DateTime(year, month, day);
-                try { date = new DateTime(year, month, day); }
-                catch { throw new Exception("Некорректная дата!"); }
-                objects obj = new objects { id_o = new_id, type_o = "u" };
-                users new_user = new users
-                {
-                    id_u = new_id,
-                    surname = this.surname,
-                    name = this.name,
-                    patron = this.patron,
-                    login = this.login,
-                    pass = password,
-                    birthday = date,
-                    role = "s"
-                    
-                };
-                db.objects.Add(obj);
-                db.users.Add(new_user);
-                db.SaveChanges();
-            
+            foreach (string log in logs)
+            {
+                if (log == login) throw new Exception("Данный логин уже занят");
+            }
+            int new_id = db.objects.Max(n => n.id_o) + 1;
+            DateTime date = dateTimePicker.Value;
+            if (date > DateTime.Now) throw new Exception("Эта дата еще не наступила");
+            objects obj = new objects { id_o = new_id, type_o = "u" };
+            users new_user = new users
+            {
+                id_u = new_id,
+                surname = this.surname,
+                name = this.name,
+                patron = this.patron,
+                login = this.login,
+                pass = password,
+                birthday = date,
+                role = "s"
+
+            };
+            db.objects.Add(obj);
+            db.users.Add(new_user);
+            db.SaveChanges();
+        }
+        public void EditStudent(users item, users result, string name, string surname, string patron, DateTime date, string old_pass, string new_pass, bool check)
+        {
+            if (date > DateTime.Now) throw new Exception("Эта дата еще не наступила");
+            if (check)
+            {
+                if (old_pass != item.pass) throw new Exception("Неверный пароль");
+                else if (old_pass == item.pass && new_pass == "") throw new Exception("Некорректный пароль");
+                else result.pass = new_pass;
+            }
+            patron = (!String.IsNullOrEmpty(patron) ? Program.NameString(patron) : "");
+            result.surname = Program.NameString(surname);
+            result.name = Program.NameString(name);
+            result.patron = patron;
+            result.birthday = date;
+            db.SaveChanges();
         }
     }
 }

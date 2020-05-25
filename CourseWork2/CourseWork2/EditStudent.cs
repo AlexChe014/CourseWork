@@ -22,9 +22,7 @@ namespace CourseWork2
             textBox1.Text = item.surname;
             textBox2.Text = item.name;
             textBox3.Text = item.patron;
-            numericUpDown1.Value = (int)item.birthday.Value.Day;
-            numericUpDown2.Value = (int)item.birthday.Value.Month;
-            numericUpDown3.Value = (int)item.birthday.Value.Year;
+            dateTimePicker1.Value = item.birthday.Value;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -38,23 +36,13 @@ namespace CourseWork2
             {
                 try
                 {
+                    bool check = (groupBox1.Enabled) ? true : false;
                     var result = ((Main)Owner).db.users.SingleOrDefault(n => n.id_u == item.id_u);
-                    DateTime date = new DateTime((int)numericUpDown3.Value, (int)numericUpDown2.Value, (int)numericUpDown1.Value);
-                    try { date = new DateTime((int)numericUpDown3.Value, (int)numericUpDown2.Value, (int)numericUpDown1.Value); }
-                    catch { throw new Exception("Некорректная дата!"); }
-                    if (groupBox1.Enabled)
-                    {
-                        if (textBox5.Text != item.pass) throw new Exception("Неверный пароль");
-                        else if (textBox5.Text == item.pass && textBox6.Text == "") throw new Exception("Некорректный пароль");
-                        else result.pass = textBox6.Text;
-                    }
-                    string patron = (!String.IsNullOrEmpty(textBox3.Text) ? Program.NameString(textBox3.Text) : "");
-                    result.surname = Program.NameString(textBox1.Text);
-                    result.name = Program.NameString(textBox2.Text);
-                    result.patron = patron;
-                    result.birthday = date;
+                    StudentForm stud = new StudentForm();
+                    stud.EditStudent(item, result, textBox2.Text, textBox1.Text, textBox3.Text, dateTimePicker1.Value, textBox5.Text, textBox6.Text, check);
                     ((Main)Owner).usersSheet = ((Main)Owner).db.users.OrderBy(n => n.id_u).ToList();
                     ((Main)Owner).db.SaveChanges();
+                    ((Main)Owner).ученикиToolStripMenuItem_Click(sender, e);
                     this.Close();
                 }
                 catch (Exception ex)

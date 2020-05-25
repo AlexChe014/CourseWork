@@ -30,27 +30,24 @@ namespace CourseWork2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Program.CheckString(new string[] { textBox1.Text, maskedTextBox1.Text}))
-            try
+            if (Program.CheckString(new string[] { textBox1.Text, maskedTextBox1.Text }))
             {
-                var nums = (from a in db.auto
-                            select a.num).ToList();
-                foreach (string num in nums)
+                try
                 {
-                    if (num == maskedTextBox1.Text.ToUpper()) throw new Exception("Данный автомобиль уже зарегестрирован в базе");
+                    var result = ((Main)Owner).db.auto.SingleOrDefault(n => n.id_a == item2.id_a);
+                    AutoForm auto = new AutoForm();
+                    auto.EditAuto(item2, textBox1.Text, maskedTextBox1.Text, (int)numericUpDown1.Value, result);
+                    ((Main)Owner).autoSheet = ((Main)Owner).db.auto.OrderBy(n => n.id_a).ToList();
+                    ((Main)Owner).db.SaveChanges();
+                    ((Main)Owner).автоToolStripMenuItem_Click(sender, e);
+                    this.Close();
                 }
-                var result = ((Main)Owner).db.auto.SingleOrDefault(n => n.id_a == item2.id_a);
-                result.model = textBox1.Text;
-                result.num = maskedTextBox1.Text;
-                result.year_a = (int)numericUpDown1.Value;
-                ((Main)Owner).autoSheet = ((Main)Owner).db.auto.OrderBy(n => n.id_a).ToList();
-                ((Main)Owner).db.SaveChanges();
-                this.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
+
     }
 }

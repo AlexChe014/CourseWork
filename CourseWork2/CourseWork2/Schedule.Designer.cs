@@ -39,13 +39,13 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -67,13 +67,13 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.dateTimePicker2);
+            this.splitContainer1.Panel2.Controls.Add(this.dateTimePicker1);
             this.splitContainer1.Panel2.Controls.Add(this.button4);
             this.splitContainer1.Panel2.Controls.Add(this.button3);
             this.splitContainer1.Panel2.Controls.Add(this.button2);
             this.splitContainer1.Panel2.Controls.Add(this.label2);
             this.splitContainer1.Panel2.Controls.Add(this.label1);
-            this.splitContainer1.Panel2.Controls.Add(this.maskedTextBox2);
-            this.splitContainer1.Panel2.Controls.Add(this.maskedTextBox1);
             this.splitContainer1.Size = new System.Drawing.Size(929, 604);
             this.splitContainer1.SplitterDistance = 493;
             this.splitContainer1.TabIndex = 0;
@@ -171,6 +171,23 @@
             this.Column7.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column7.Width = 136;
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(237, 56);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(178, 30);
+            this.dateTimePicker2.TabIndex = 14;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(27, 56);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(178, 30);
+            this.dateTimePicker1.TabIndex = 13;
+            this.dateTimePicker1.Value = new System.DateTime(2020, 5, 1, 0, 0, 0, 0);
+            // 
             // button4
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -178,7 +195,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(369, 43);
+            this.button4.Location = new System.Drawing.Point(452, 48);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(134, 40);
             this.button4.TabIndex = 12;
@@ -193,7 +210,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(675, 43);
+            this.button3.Location = new System.Drawing.Point(758, 48);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(134, 40);
             this.button3.TabIndex = 11;
@@ -209,7 +226,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(522, 43);
+            this.button2.Location = new System.Drawing.Point(605, 48);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(134, 40);
             this.button2.TabIndex = 10;
@@ -238,30 +255,6 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "--";
             // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.maskedTextBox2.Location = new System.Drawing.Point(232, 53);
-            this.maskedTextBox2.Mask = "00/00/0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 30);
-            this.maskedTextBox2.TabIndex = 2;
-            this.maskedTextBox2.Text = "16052020";
-            this.maskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.maskedTextBox1.Location = new System.Drawing.Point(105, 53);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 30);
-            this.maskedTextBox1.TabIndex = 1;
-            this.maskedTextBox1.Text = "01052020";
-            this.maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
-            // 
             // Schedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
@@ -289,8 +282,6 @@
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -303,5 +294,7 @@
         public System.Windows.Forms.Button button4;
         public System.Windows.Forms.Button button3;
         public System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

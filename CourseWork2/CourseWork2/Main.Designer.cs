@@ -98,8 +98,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.label1);
             this.splitContainer1.Panel2.Controls.Add(this.toolStripContainer1);
             this.splitContainer1.Panel2MinSize = 550;
-            this.splitContainer1.Size = new System.Drawing.Size(1335, 584);
-            this.splitContainer1.SplitterDistance = 735;
+            this.splitContainer1.Size = new System.Drawing.Size(1320, 637);
+            this.splitContainer1.SplitterDistance = 720;
             this.splitContainer1.TabIndex = 0;
             // 
             // button5
@@ -122,7 +122,7 @@
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.Location = new System.Drawing.Point(118, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(527, 35);
+            this.label7.Size = new System.Drawing.Size(512, 35);
             this.label7.TabIndex = 3;
             this.label7.Text = "Новости ПДД";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -133,7 +133,7 @@
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(651, 3);
+            this.button4.Location = new System.Drawing.Point(636, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(81, 38);
             this.button4.TabIndex = 1;
@@ -149,7 +149,7 @@
             this.webBrowser1.Location = new System.Drawing.Point(-3, 47);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(735, 537);
+            this.webBrowser1.Size = new System.Drawing.Size(720, 590);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("http://www.pdd24.com/", System.UriKind.Absolute);
             // 
@@ -171,7 +171,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(383, 478);
+            this.button3.Location = new System.Drawing.Point(383, 513);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(134, 40);
             this.button3.TabIndex = 8;
@@ -187,7 +187,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(74, 478);
+            this.button2.Location = new System.Drawing.Point(74, 513);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(134, 40);
             this.button2.TabIndex = 7;
@@ -203,7 +203,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(228, 478);
+            this.button1.Location = new System.Drawing.Point(228, 513);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 40);
             this.button1.TabIndex = 6;
@@ -235,7 +235,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(590, 277);
+            this.dataGridView1.Size = new System.Drawing.Size(590, 312);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.Visible = false;
             // 
@@ -284,9 +284,9 @@
             // 
             // toolStripContainer1.ContentPanel
             // 
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(591, 24);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(591, 26);
             this.toolStripContainer1.LeftToolStripPanelVisible = false;
-            this.toolStripContainer1.Location = new System.Drawing.Point(2, 530);
+            this.toolStripContainer1.Location = new System.Drawing.Point(2, 583);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.RightToolStripPanelVisible = false;
             this.toolStripContainer1.Size = new System.Drawing.Size(591, 54);
@@ -398,7 +398,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1335, 584);
+            this.ClientSize = new System.Drawing.Size(1320, 637);
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -431,11 +431,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem преподавателиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ученикиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem автоToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem платежиStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem расписаниеStripMenuItem;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.Button button4;
@@ -449,10 +444,15 @@
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ToolStripMenuItem файлStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem отчетToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem инфоToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem закрытьToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem преподавателиToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem ученикиToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem автоToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem платежиStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem расписаниеStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem файлStripMenuItem;
     }
 }
 

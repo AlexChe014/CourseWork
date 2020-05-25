@@ -114,7 +114,7 @@ namespace CourseWork2
         }
 
         #region StripMenu items
-        private void преподавателиToolStripMenuItem_Click(object sender, EventArgs e)
+        public void преподавателиToolStripMenuItem_Click(object sender, EventArgs e)
         {
             activeTable = 1;
             label4.Text = "Преподаватели";
@@ -125,7 +125,7 @@ namespace CourseWork2
             Show show = new Show();
             show.ShowUser(dataGridView1, "t", "a");
         }
-        private void ученикиToolStripMenuItem_Click(object sender, EventArgs e)
+        public void ученикиToolStripMenuItem_Click(object sender, EventArgs e)
         {
             activeTable = 2;
             label4.Text = "Ученики";
@@ -136,7 +136,7 @@ namespace CourseWork2
             Show show = new Show();
             show.ShowUser(dataGridView1, "s", "s");
         }
-        private void автоToolStripMenuItem_Click(object sender, EventArgs e)
+        public void автоToolStripMenuItem_Click(object sender, EventArgs e)
         {
             activeTable = 3;
             label4.Text = "Авто";
@@ -147,7 +147,7 @@ namespace CourseWork2
             Show show = new Show();
             show.ShowAuto(dataGridView1);
         }
-        private void платежиStripMenuItem_Click(object sender, EventArgs e)
+        public void платежиStripMenuItem_Click(object sender, EventArgs e)
         {
             activeTable = 4;
             dataGridView1.Visible = true;
@@ -159,7 +159,7 @@ namespace CourseWork2
             Show show = new Show();
             show.ShowPay(dataGridView1);
         }
-        private void расписаниеStripMenuItem_Click(object sender, EventArgs e)
+        public void расписаниеStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.Count == 1)
             {
@@ -203,6 +203,13 @@ namespace CourseWork2
             {
                 DeleteData del = new DeleteData();
                 del.Delete(dataGridView1, activeTable);
+                switch (activeTable)
+                {
+                    case (1): преподавателиToolStripMenuItem_Click(sender, e); break;
+                    case (2): ученикиToolStripMenuItem_Click(sender, e); break;
+                    case (3): автоToolStripMenuItem_Click(sender, e); break;
+                    case (4): платежиStripMenuItem_Click(sender, e); break;
+                }
             }
         }
 
@@ -259,5 +266,7 @@ namespace CourseWork2
                 }
             }
         }
+
+
     }
 }

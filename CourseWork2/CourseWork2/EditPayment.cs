@@ -13,10 +13,10 @@ namespace CourseWork2
     public partial class EditPayment : Form
     {
         public driveCourseEntities1 db = new driveCourseEntities1();
-        payment item3;
+        payment item;
         public EditPayment(payment pays)
         {
-            item3 = pays;
+            item = pays;
             InitializeComponent();
             var query = (from us in db.users
                          where us.role.ToString() == "s"
@@ -27,13 +27,12 @@ namespace CourseWork2
                 comboBox1.Items.Add($"{str.id_u}. {str.surname} {str.name} {str.patron}");
             }
             var query2 = (from us in db.users
-                          where us.id_u == item3.id_s
+                          where us.id_u == item.id_s
                           select us).ToList();
             comboBox1.SelectedItem = $"{query2[0].id_u}. {query2[0].surname} {query2[0].name} {query2[0].patron}";
-            textBox1.Text = item3.summa.ToString();
-            numericUpDown1.Value = item3.pay_day.Date.Day;
-            numericUpDown2.Value = item3.pay_day.Date.Month;
-            numericUpDown3.Value = item3.pay_day.Date.Year;
+            textBox1.Text = item.summa.ToString();
+            dateTimePicker1.Value = item.pay_day;
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -47,21 +46,19 @@ namespace CourseWork2
             {
                 try
                 {
-                    var result = ((Main)Owner).db.payment.SingleOrDefault(n => n.id_s == item3.id_s);
-                    DateTime date = new DateTime((int)numericUpDown3.Value, (int)numericUpDown2.Value, (int)numericUpDown1.Value);
-                    try { date = new DateTime((int)numericUpDown3.Value, (int)numericUpDown2.Value, (int)numericUpDown1.Value); }
-                    catch { throw new Exception("Некорректная дата"); }
-                    if (date > DateTime.Now) throw new Exception("Эта дата еще не наступила");
-                    result.id_s = Convert.ToInt32(comboBox1.SelectedItem.ToString().Substring(0, comboBox1.SelectedItem.ToString().IndexOf('.')));
-                    result.summa = (float)Convert.ToDouble(textBox1.Text);
-                    result.pay_day = date;
+                    var result = ((Main)Owner).db.payment.SingleOrDefault(n => n.id_p == item.id_p);
+                    PayForm pay = new PayForm();
+                    pay.EditPayment(item, result, dateTimePicker1.Value
+                        , Convert.ToInt32(comboBox1.SelectedItem.ToString().Substring(0, comboBox1.SelectedItem.ToString().IndexOf('.'))),
+                        (float)Convert.ToDouble(textBox1.Text));
                     ((Main)Owner).paySheet = ((Main)Owner).db.payment.OrderBy(n => n.id_p).ToList();
                     ((Main)Owner).db.SaveChanges();
+                    ((Main)Owner).платежиStripMenuItem_Click(sender, e);
                     this.Close();
                 }
-                catch
+                catch (Exception ex)
                 {
-
+                    MessageBox.Show(ex.Message);
                 }
             }
             else MessageBox.Show("Не все поля заполнены!");
